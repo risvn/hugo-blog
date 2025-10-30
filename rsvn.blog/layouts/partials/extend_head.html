@@ -1,0 +1,15 @@
+{{ $retro := resources.Get "css/retro.css" | resources.Minify }}
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const saved = localStorage.getItem("theme");
+  if (saved === "retro") {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "{{ $retro.Permalink }}";
+    link.id = "retro-style";
+    document.head.appendChild(link);
+  }
+});
+</script>
+

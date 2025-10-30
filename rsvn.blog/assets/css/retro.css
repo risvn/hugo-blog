@@ -1,0 +1,169 @@
+/* ===== Retro 2000s / Codeforces-style Vibrant Theme ===== */
+body {
+  font-family: "Verdana", "Tahoma", sans-serif;
+  background-color: #eaeaea;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* --- Headers & Navigation --- */
+header, nav, footer {
+  border: 1px solid #666;
+  background-color: #d0d8ff;
+  padding: 6px;
+  text-align: center;
+  box-shadow: 0 0 2px #555;
+}
+
+header h1 {
+  font-family: "Trebuchet MS", "Arial", sans-serif;
+  font-size: 18px;
+  color: #002b80;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #0033cc;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #ff3300;
+  text-decoration: underline;
+}
+
+/* --- Page Container --- */
+main {
+  width: 900px;
+  margin: 20px auto;
+  padding: 8px 12px;
+  border: 2px solid #666;
+  background-color: #ffffff;
+  box-shadow: 0 0 3px #888;
+}
+
+/* --- Headings --- */
+h1, h2, h3 {
+  font-family: "Trebuchet MS", "Verdana", sans-serif;
+  color: #002b80;
+  margin-top: 15px;
+  border-bottom: 1px solid #99a;
+  padding-bottom: 2px;
+}
+h2 { font-size: 15px; }
+h3 { font-size: 13px; }
+
+/* --- Links --- */
+a {
+  color: #0000ee;
+  text-decoration: underline;
+}
+a:hover {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+/* --- Code blocks --- */
+code, pre {
+  background-color: #f7f7ff;
+  border: 1px solid #aaa;
+  padding: 4px;
+  display: block;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+/* --- Tables --- */
+table {
+  border-collapse: collapse;
+  margin: 12px 0;
+  width: 100%;
+  font-size: 12px;
+}
+th, td {
+  border: 1px solid #666;
+  padding: 4px 6px;
+}
+th {
+  background-color: #c8d4ff;
+  color: #002b80;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #f2f2ff;
+}
+
+/* --- Blockquotes --- */
+blockquote {
+  border-left: 4px solid #0033cc;
+  background-color: #f0f3ff;
+  margin: 10px 0;
+  padding: 6px 10px;
+  color: #333;
+  font-style: italic;
+}
+
+/* --- Buttons / Inputs --- */
+button, input, select {
+  border: 1px solid #333;
+  background-color: #e0e0e0;
+  padding: 3px 6px;
+  font-size: 12px;
+  font-family: inherit;
+  border-radius: 0; /* Sharp edges */
+  box-shadow: 0 0 1px #777 inset;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #ccc;
+  border-color: #000;
+}
+
+/* --- Footer --- */
+footer {
+  font-size: 11px;
+  color: #222;
+  margin-top: 40px;
+  padding: 6px;
+  background-color: #d0d8ff;
+  border-top: 2px solid #666;
+}
+
+/* --- Misc Elements --- */
+hr {
+  border: none;
+  border-top: 1px solid #666;
+  margin: 15px 0;
+}
+
+img {
+  border: 1px solid #888;
+  padding: 2px;
+  background-color: #fff;
+}
+
+pre {
+  border-left: 4px solid #0033cc;
+}
+
+/* --- Optional retro scrollbar --- */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: #aab;
+  border: 2px solid #eef;
+}
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+

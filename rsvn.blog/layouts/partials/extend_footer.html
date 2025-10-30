@@ -1,0 +1,28 @@
+<script>
+function toggleRetro() {
+  const existing = document.getElementById("retro-style");
+  if (existing) {
+    existing.remove();
+    localStorage.removeItem("theme");
+  } else {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "{{ (resources.Get "css/retro.css" | resources.Minify).Permalink }}";
+    link.id = "retro-style";
+    document.head.appendChild(link);
+    localStorage.setItem("theme", "retro");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.createElement("button");
+  btn.textContent = " Toggle Retro Mode";
+  btn.style.position = "fixed";
+  btn.style.bottom = "20px";
+  btn.style.right = "20px";
+  btn.style.zIndex = "9999";
+  btn.onclick = toggleRetro;
+  document.body.appendChild(btn);
+});
+</script>
+

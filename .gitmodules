@@ -1,0 +1,8 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/risvn/rsvn.github.io.git
+	branch = main
+[submodule "rsvn.blog/public"]
+	path = rsvn.blog/public
+	url = https://github.com/risvn/rsvn.github.io.git
+	branch = main
