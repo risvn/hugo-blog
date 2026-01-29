@@ -1,106 +1,65 @@
-📘 Hugo Basics Guide
+# Hugo Basics Guide
 
-Hugo is a fast, open-source static site generator written in Go. It’s commonly used for blogs, documentation sites, and portfolios.
+Hugo is a fast, open-source static site generator written in Go.  
+It’s commonly used for blogs, documentation sites, and portfolios.
 
-📦 Installation
-On Linux
-sudo apt install hugo        # Debian/Ubuntu
-sudo pacman -S hugo         # Arch
-sudo dnf install hugo       # Fedora
-On macOS
-brew install hugo
-On Windows
+As of early 2026, the latest version is around **v0.155** – **v0.156-dev** (check `hugo version` or the [official releases](https://github.com/gohugoio/hugo/releases) for the exact current release).
 
-Download from: https://gohugo.io/getting-started/installing/
+## 📦 Installation
 
-Check installation:
+### On Linux
+```bash
+sudo apt install hugo       # Debian / Ubuntu
+sudo pacman -S hugo        # Arch
+sudo dnf install hugo      # Fedora# Hugo Basics Guide
 
-hugo version
-🚀 Create a New Site
+Hugo is a fast, open-source static site generator written in Go.  
+It’s commonly used for blogs, documentation sites, and portfolios.
+
+As of early 2026, the latest version is around **v0.155** – **v0.156-dev** (check `hugo version` or the [official releases](https://github.com/gohugoio/hugo/releases) for the exact current release).
+
+## 📦 Installation
+
+### On Linux
+```bash
+sudo apt install hugo       # Debian / Ubuntu
+sudo pacman -S hugo        # Arch
+sudo dnf install hugo      # Fedora
+```
+#### create a new site
+```bash 
 hugo new site mysite
 cd mysite
-🎨 Add a Theme
+```
 
-Browse themes: https://themes.gohugo.io/
 
-Example using Git:
-
-git init
-git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke themes/ananke
-
-Enable the theme in hugo.toml (or config.toml):
-
-theme = "ananke"
-✍️ Create Content
-
-Create a new post:
-
+#### create content
+```bash
 hugo new posts/my-first-post.md
-
-Edit the file in content/posts/my-first-post.md:
-
+```
+this will reselut in blog template
 ---
 title: "My First Post"
 date: 2026-01-29
 draft: false
 ---
 
-
 Hello, this is my first post using Hugo!
-👀 Run Development Server
+
+
+
+for demo you can run server locally
+```bash
 hugo server
+````
 
-Visit: http://localhost:1313
-
-To include drafts:
-
-hugo server -D
-🏗️ Build the Site
-hugo
-
-This generates static files in the public/ folder. You can upload this folder to any web hosting service.
-
-📂 Project Structure
-mysite/
-├── archetypes/
-├── content/
-├── layouts/
-├── public/
-├── static/
-├── themes/
-└── hugo.toml
-
-content/ → Your posts and pages
-
-static/ → Images, CSS, JS
-
-themes/ → Theme files
-
-public/ → Final generated site
-
-⚙️ Configuration Example (hugo.toml)
-baseURL = "https://example.com/"
+#### basic config 
+```bash
+baseURL      = "https://example.com/"
 languageCode = "en-us"
-title = "My Hugo Site"
-theme = "ananke"
-🧭 Useful Commands
-Command	Description
-hugo new site <name>	Create a new site
-hugo new <path>	Create new content
-hugo server	Start local server
-hugo	Build the site
-📚 Resources
+title        = "My Hugo Site"
+theme        = "ananke"
 
-Official Docs: https://gohugo.io/documentation/
-
-Themes: https://themes.gohugo.io/
-
-Community: https://discourse.gohugo.io/
-
-If you want, I can also generate:
-
-A Hugo blog template
-
-A documentation site setup
-
-A GitHub Pages deployment guide
+[params]
+  description = "A simple blog built with Hugo"
+  ```
